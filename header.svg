@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a16" />
+      <stop offset="50%" stop-color="#0d0e25" />
+      <stop offset="100%" stop-color="#1b1130" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8be9fd" />
+      <stop offset="50%" stop-color="#bd93f9" />
+      <stop offset="100%" stop-color="#ff79c6" />
+    </linearGradient>
+
+    <linearGradient id="wireframe-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff79c6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8be9fd" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Blueprint Grid Pattern -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#252445" stroke-width="0.5" />
+    </pattern>
+    <pattern id="dot-grid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.5" fill="#44475a" opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#bg-grad)" />
+
+  <!-- Grid overlay -->
+  <rect width="800" height="200" fill="url(#grid)" opacity="0.6" />
+  <rect width="800" height="200" fill="url(#dot-grid)" opacity="0.4" />
+
+  <!-- Glowing diagonal light -->
+  <path d="M-100,250 L600,-100" stroke="url(#primary-grad)" stroke-width="6" opacity="0.15" filter="blur(20px)" />
+  <path d="M200,250 L900,-100" stroke="url(#primary-grad)" stroke-width="4" opacity="0.1" filter="blur(15px)" />
+
+  <!-- Abstract Architectural Wireframe (Isometric geometry) -->
+  <g transform="translate(680, 100)" stroke="url(#wireframe-grad)" stroke-width="1.5" fill="none">
+    <!-- Isometric Cube 1 -->
+    <path d="M 0 -60 L 52 -30 L 52 30 L 0 60 L -52 30 L -52 -30 Z" stroke="#bd93f9" opacity="0.7"/>
+    <path d="M 0 -60 L 0 60" stroke="#ff79c6" opacity="0.6"/>
+    <path d="M 0 0 L 52 -30" stroke="#8be9fd" opacity="0.8"/>
+    <path d="M 0 0 L -52 -30" stroke="#8be9fd" opacity="0.8"/>
+
+    <!-- Inner geometries & drafting lines -->
+    <circle cx="0" cy="0" r="45" stroke="#6272a4" stroke-dasharray="3,3" opacity="0.5"/>
+    <path d="M -70 0 L 70 0" stroke="#6272a4" stroke-dasharray="5,5" opacity="0.4" />
+    <path d="M 0 -70 L 0 70" stroke="#6272a4" stroke-dasharray="5,5" opacity="0.4" />
+
+    <!-- Extra architectural detail points -->
+    <circle cx="0" cy="-60" r="3" fill="#ff79c6"/>
+    <circle cx="52" cy="-30" r="3" fill="#8be9fd"/>
+    <circle cx="-52" cy="30" r="3" fill="#50fa7b"/>
+    <circle cx="0" cy="60" r="3" fill="#bd93f9"/>
+  </g>
+
+  <!-- Left Content: Typography -->
+  <!-- Main Name -->
+  <text x="50" y="85" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="38" fill="url(#primary-grad)" letter-spacing="2">
+    AKON M HASIB
+  </text>
+
+  <!-- Subtitle -->
+  <text x="50" y="120" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="14" fill="#f8f8f2" opacity="0.8" letter-spacing="1">
+    📐 ARCHITECTURE STUDENT &amp; DESIGNER
+  </text>
+  <text x="50" y="142" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="14" fill="#8be9fd" letter-spacing="1">
+    💻 FRONTEND DEVELOPER &amp; TOOL CREATOR
+  </text>
+
+  <!-- Small details (like coordinates / dimensions) -->
+  <text x="50" y="175" font-family="monospace" font-size="10" fill="#6272a4" opacity="0.6">
+    SCALE 1:1  //  LOC: 23.8103° N, 90.4125° E (Dhaka, BD)  //  STATUS: ACTIVE
+  </text>
+</svg>
