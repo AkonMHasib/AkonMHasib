@@ -6,7 +6,6 @@
 
 <div align="center">
 
-  [![Portfolio](https://img.shields.io/badge/Portfolio-akonmhasib.site-8be9fd?style=for-the-badge&logo=google-chrome&logoColor=1e1e2e&labelColor=282a36)](https://www.akonmhasib.site/)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-in%2FAkonMHasib-bd93f9?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=282a36)](https://www.linkedin.com/in/AkonMHasib)
   [![YouTube](https://img.shields.io/badge/YouTube-@AkonTeaches-ff5555?style=for-the-badge&logo=youtube&logoColor=ffffff&labelColor=282a36)](https://www.youtube.com/@AkonTeaches)
   [![Facebook](https://img.shields.io/badge/Facebook-AkonMHasib-ff79c6?style=for-the-badge&logo=facebook&logoColor=ffffff&labelColor=282a36)](https://www.facebook.com/AkonMHasib)
